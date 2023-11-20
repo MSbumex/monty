@@ -1,16 +1,14 @@
 #include "monty.h"
 
 /**
- * push - adds data to the top of the stack
+ * push - func toadds data to the top of the stack
  * breaks string into series of tokens using delimeter
  * @stack: indicating a doubly linkedlist
  * @line_number: the number line
  *
- * Description: check paraams params variable against input strings
- * then, locate stack beased on the order of input arguements
- * Return: Nothing.
  */
-void push(stack_t **stack, unsigned int line_number)
+
+ void push(stack_t **stack, unsigned int line_number)
 {
 	register int num;
 	char *params = strtok(NULL, "\n");
@@ -33,12 +31,9 @@ void push(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * pop - a function to pull data from the top of the stack
+ * pop - func to pull data from the top of the stack
  * @stack: indicating a doubly linkedlist
  * @line_number: the number line
- *
- * Description: delete nodes at index if stack is not empty
- * otherwise, print an error message
  * Return: Nothing.
  */
 void pop(stack_t **stack, unsigned int line_number)
@@ -53,7 +48,7 @@ void pop(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * swap - a function to swap within the stack
+ * swap -  function to swap within the stack
  * @stack: indicating a doubly linkedlist
  * @line_number: the number line
  *
@@ -78,7 +73,6 @@ void swap(stack_t **stack, unsigned int line_number)
  * nop - returns nothing from stack
  * @stack: doubly linked list
  * @line_number: the line
- *
  * Return: Nothing.
  */
 void nop(stack_t **stack, unsigned int line_number)
@@ -91,8 +85,6 @@ void nop(stack_t **stack, unsigned int line_number)
  * pall - prints everything in stack
  * @stack: doubly linked list
  * @line_number: the line
- *
- * Return: Nothing.
  */
 void pall(stack_t **stack, unsigned int line_number)
 {
